@@ -11,8 +11,8 @@ css = CSSSelector('.attachments a')
 
 
 def attachments(shot):
-    """Check if there are PSD attachments for a given shot."""
-    endpoint = "http://dribbble.com/shots/%s" % str(shot)
+    """Check if there are attachments for a given shot."""
+    endpoint = "http://dribbble.com/shots/" + str(shot)
     content = req.get(endpoint).content
     html = parse(content)
     links = css(html)

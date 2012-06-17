@@ -19,7 +19,7 @@ def attachments(shot):
     return links
 
 
-def psds(shot):
+def psd(shot):
     """Return PSD attachment links for a given shot."""
     files = []
     links = attachments(shot)

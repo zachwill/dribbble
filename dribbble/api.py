@@ -97,6 +97,11 @@ def shots(kind=None, **params):
     return get(url, **params)
 
 
+def teammates(name, **params):
+    """Same as following."""
+    return following(name, **params)
+
+
 def twitter(name):
     """Return the Twitter username of a player."""
     info = scout(name)

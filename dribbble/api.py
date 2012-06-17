@@ -87,8 +87,12 @@ def shot(number, **params):
 
 def shots(kind=None, **params):
     """List of shots for either 'debuts', 'everyone', or 'popular'."""
+    possible = ('debuts', 'everyone', 'popular')
     if not kind:
         kind = "popular"
+    elif kind not in possible:
+        # Misused. Looking for player shots.
+        return scout(kind)
     url = "/".join((ENDPOINT, "shots", kind))
     return get(url, **params)
 

@@ -1,2 +1,2 @@
 from .api import *
-from .attached import attachments, psds
+from .attached import attachments, psd

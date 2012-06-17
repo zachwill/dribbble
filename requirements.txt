@@ -1,2 +1,4 @@
+mock
+lxml
 requests
 simplejson

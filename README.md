@@ -43,33 +43,33 @@ possible.
 >>> d.shot(1234)
 
 # See a particular shot's rebounds
->>> d.rebounds(1234)
+>>> d.rebounds(591065)
 
 # Get comments on a shot
->>> d.comments(1234)
+>>> d.comments(607332)
 
 # See the likes for a player
 >>> d.likes('simplebits')
 
 # Get the followers of a player
->>> d.followers('simplebits')
+>>> d.followers('lobanovskiy')
 
 # See who a player is following
 >>> d.following('simplebits')
->>> d.teammates('simplebits')
+>>> d.teammates('vi')
 
 # Get recent shots from the players a player is following
 >>> d.scoreboard('simplebits')
 
 # See who a given player has drafted
->>> d.draftees('simplebits')
+>>> d.draftees('CreatureBox')
 
 # Get the Twitter username of a player
->>> d.twitter('simplebits')
+>>> d.twitter('vi')
 
 # Check to see if a shot has attachments
->>> d.attachments(1234)
+>>> d.attachments(535565)
 
 # See if a shot has PSD attachments
->>> d.psd(1234)
+>>> d.psd(607070)
 ```

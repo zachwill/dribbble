@@ -15,13 +15,14 @@ def attachments(shot):
     endpoint = "http://dribbble.com/shots/%s" % str(shot)
     content = req.get(endpoint).content
     html = parse(content)
-    return psds(html)
-
-
-def psds(html):
-    """Return PSD links."""
-    files = []
     links = css(html)
+    return links
+
+
+def psds(shot):
+    """Return PSD attachment links for a given shot."""
+    files = []
+    links = attachments(shot)
     for link in links:
         name = link.text.lower()
         if name.endswith('psd'):

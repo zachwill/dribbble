@@ -35,6 +35,9 @@ possible.
 >>> d.shots('everyone')
 >>> d.shots('debut')
 
+# Pagination and up to 30 shots at a time.
+>>> d.shots('popular', count=30, page=2)
+
 # Get shots for a player
 >>> d.shots('simplebits')
 >>> d.player('simplebits')

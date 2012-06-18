@@ -27,6 +27,6 @@ def psd(shot):
         name = link.text.lower()
         if name.endswith('psd'):
             href = link.get('href')
-            full_url = "http://dribble.com" + href
+            full_url = "http://dribbble.com" + href
             files.append(full_url)
     return files

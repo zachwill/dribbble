@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="dribbble",
-    version="0.1",
+    version="0.2",
     description="An easy-to-use Python wrapper for the Dribbble API.",
     author="Zach Williams",
     author_email="hey@zachwill.com",
@@ -29,8 +29,6 @@ setup(
         "dribbble"
     ],
     install_requires=[
-        "mock",
-        "lxml",
         "requests",
         "simplejson"
     ]

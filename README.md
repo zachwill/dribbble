@@ -66,7 +66,12 @@ possible.
 
 # Get the Twitter username of a player
 >>> d.twitter('vi')
+```
 
+If you have `lxml` installed, there are two additional functions, as
+well.
+
+```python
 # Check to see if a shot has attachments
 >>> d.attachments(535565)
 

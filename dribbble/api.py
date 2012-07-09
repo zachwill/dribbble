@@ -21,6 +21,8 @@ def get(url, **params):
 
 def comments(number, **params):
     """Return the comments for a given shot."""
+    if isinstance(number, int):
+        number = str(number)
     url = "/".join((ENDPOINT, "shots", number, "comments"))
     return get(url, **params)
 

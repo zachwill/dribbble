@@ -1,6 +1,8 @@
 dribbble
 ========
 
+[![Build Status](https://secure.travis-ci.org/zachwill/dribbble.png?branch=master)](http://travis-ci.org/zachwill/dribbble)
+
 A simple Python wrapper for the [Dribbble API](http://dribbble.com/api).
 
 

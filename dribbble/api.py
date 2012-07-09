@@ -5,7 +5,6 @@ Core functions for interacting with the Dribbble API.
 """
 
 import requests as req
-import simplejson as json
 
 
 ENDPOINT = "http://api.dribbble.com"
@@ -16,8 +15,8 @@ def get(url, **params):
     if 'count' in params:
         count = params.pop('count')
         params['per_page'] = count
-    data = req.get(url, params=params)
-    return json.loads(data.content)
+    response = req.get(url, params=params)
+    return response.json
 
 
 def comments(number, **params):

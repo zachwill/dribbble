@@ -29,7 +29,7 @@ setup(
         "dribbble"
     ],
     install_requires=[
-        "requests",
+        "requests >= 2.0",
         "simplejson"
     ]
 )

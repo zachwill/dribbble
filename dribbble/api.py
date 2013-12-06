@@ -16,7 +16,7 @@ def get(url, **params):
         count = params.pop('count')
         params['per_page'] = count
     response = req.get(url, params=params)
-    return response.json
+    return response.json()
 
 
 def comments(number, **params):

@@ -1,4 +1,6 @@
 mock
-lxml
-requests>=2.0
+requests >= 2.0
 simplejson
+
+lxml
+cssselect
